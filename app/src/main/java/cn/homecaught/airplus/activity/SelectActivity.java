@@ -84,7 +84,7 @@ public class SelectActivity extends AppCompatActivity {
         }
 
         final List<String> xitems = new ArrayList<String>();
-        mySelectAdapter = new MySelectAdapter(this, xitems);
+        mySelectAdapter = new MySelectAdapter(this, xitems, xitems);
         listView.setAdapter(mySelectAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -184,6 +184,7 @@ public class SelectActivity extends AppCompatActivity {
 
             items = new ArrayList<Object>();
             List<String> datas = new ArrayList<>();
+            List<String> logoDatas = new ArrayList<>();
 
             try{
 
@@ -195,15 +196,17 @@ public class SelectActivity extends AppCompatActivity {
                     cityBean.setKey(o.getString("city_key"));
                     cityBean.setName(o.getString("city_name"));
                     cityBean.setUid(o.getString("id"));
+                    cityBean.setLogo(o.getString("logo"));
                     items.add(cityBean);
                     datas.add(cityBean.getKey());
+                    logoDatas.add(cityBean.getLogo());
                 }
 
             }catch (JSONException e){
                 e.printStackTrace();
             }
 
-            mySelectAdapter.reload(datas);
+            mySelectAdapter.reload(datas, logoDatas);
         }
     }
 
@@ -225,6 +228,7 @@ public class SelectActivity extends AppCompatActivity {
 
             items = new ArrayList<Object>();
             List<String> datas = new ArrayList<>();
+            List<String> logoDatas = new ArrayList<>();
 
             try{
 
@@ -235,15 +239,17 @@ public class SelectActivity extends AppCompatActivity {
                     SchoolBean schoolBean = new SchoolBean();
                     schoolBean.setName(o.getString("name"));
                     schoolBean.setUid(o.getString("id"));
+                    schoolBean.setLogo(o.getString("logo"));
                     items.add(schoolBean);
                     datas.add(schoolBean.getName());
+                    logoDatas.add(schoolBean.getLogo());
                 }
 
             }catch (JSONException e){
                 e.printStackTrace();
             }
 
-            mySelectAdapter.reload(datas);
+            mySelectAdapter.reload(datas, logoDatas);
         }
     }
 
@@ -285,7 +291,7 @@ public class SelectActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
-            mySelectAdapter.reload(datas);
+            mySelectAdapter.reload(datas, null);
         }
     }
 }

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/a1/Desktop/AirPlus-Android/extras/HoloGraphLibrary/assets"/></dataSet><dataSet config="debug"><source path="/Users/a1/Desktop/AirPlus-Android/extras/HoloGraphLibrary/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/a1/Documents/project/AirPlus-Android/extras/HoloGraphLibrary/assets"/></dataSet><dataSet config="debug"><source path="/Users/a1/Documents/project/AirPlus-Android/extras/HoloGraphLibrary/src/debug/assets"/></dataSet></merger>

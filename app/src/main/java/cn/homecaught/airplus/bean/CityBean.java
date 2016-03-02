@@ -27,8 +27,16 @@ public class CityBean {
     public void setKey(String key) {
         this.key = key;
     }
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
 
     private String uid;
     private String name;
     private String key;
+    private String logo;
 }

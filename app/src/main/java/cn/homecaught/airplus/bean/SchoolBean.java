@@ -21,6 +21,17 @@ public class SchoolBean {
         this.uid = uid;
     }
 
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
     private String name;
     private String uid;
+
+    private String logo;
+
 }

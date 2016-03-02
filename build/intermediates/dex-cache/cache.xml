@@ -2,74 +2,74 @@
 <items version="2" >
 
     <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-5fe5a657ac8506a452fc6dafeee708561a4b0497.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/httpmime-4.1.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3-9db2ce0103d5cdf2cdeea4fc529a4368070f9f94.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-f7599749a13d659a310b01b6f7b48d0dca20539f.jar" />
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-febadebc38016721acd0f980a17ee52f8bd61d23.jar" />
     </item>
     <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/AirPlus-Android/hellocharts-library/unspecified/jars/classes.jar"
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="c857d2d5f636aa43ed249a429bb9549919fd2e01">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-f195fa7143e2d2292afad6c29c14219e5d8cf5f6.jar" />
-    </item>
-    <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-d647542fee7979a835ad0440a5d3f435e9c1f200.jar" />
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-6ab68cd90b14f2f4ca5df03094ba8cce0678edd8.jar" />
     </item>
     <item
         jar="/Users/a1/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-dbfd76677b040e6767e435558724ef0b67c9b25c.jar" />
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-dbfd76677b040e6767e435558724ef0b67c9b25c.jar" />
     </item>
     <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-0fb1c650bedd118da1e15735b004d60f6e3226d0.jar" />
-    </item>
-    <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/libs/universal-image-loader-1.9.4.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.4-60678c9907c732fe34721325f6a5cdd8d3991772.jar" />
-    </item>
-    <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/libs/httpmime-4.1.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/httpmime-4.1.3-faf6cfe7a9d608682b7465604495b53343aa2aaf.jar" />
-    </item>
-    <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-684eb3038c20ca4e14ea2c24ff30cef9862e98f7.jar" />
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-d1a52d6fd52a75169542f355ab658cef05e9dc32.jar" />
     </item>
     <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/libs/org.apache.http.legacy.jar"
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/AirPlus-Android/hellocharts-library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="49da1f74f50f3769bc73a45b590963663a89d3cc">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-ebef33486d8f5854147934589285fd13ded4a851.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-67c98fa12eaf467a290a952fb21a8c768d7c2c0b.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/org.apache.http.legacy.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-20d0a32f35b97f7fc7bc1e8825c039ef03ec31e2.jar" />
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-29350dc06e794eeed424df5bfb2bec858d00b522.jar" />
     </item>
     <item
-        jar="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/universal-image-loader-1.9.4.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/Users/a1/Desktop/AirPlus-Android/app/build/intermediates/pre-dexed/debug/classes-ac6ef9b68dd47f939529a203a481b516901f060d.jar" />
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.4-6aa1ae951f0a998a0ff260e179b332841ff27c47.jar" />
     </item>
 
 </items>
