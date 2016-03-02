@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPeterRiver">#3498DB</color>
+    <color name="colorPeterRiver2">#AF3498DB</color>
+    <color name="colorClouds">#ECF0F1</color>
+    <color name="colorClouds1">#AFECF0F1</color>
+
+    <color name="colorLightGray">#666666</color>
+    <color name="colorDarkGray">#333333</color>
+    <color name="colorMaroon">#964B00</color>
+    <color name="colorLineBlue">#33B5E5</color>
+    <color name="colorLineViolet">#AA66CC</color>
+
+</resources>

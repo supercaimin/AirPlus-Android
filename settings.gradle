@@ -1,0 +1,4 @@
+include ':app', ':HoloGraphLibrary', ':MPChartLib', ':hellocharts-library'
+project(':HoloGraphLibrary').projectDir = new File('extras/HoloGraphLibrary')
+project(':MPChartLib').projectDir = new File('extras/MPChartLib')
+project(':hellocharts-library').projectDir = new File('extras/hellocharts-library')

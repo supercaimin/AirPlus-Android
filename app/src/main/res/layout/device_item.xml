@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorClouds" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02/27/2016 14:03:00 PM"
+                android:textColor="@color/colorLightGray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIS D218"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nanjing International School"
+                android:textColor="@color/colorLightGray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tvValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="36"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="PM2.5"
+                android:textColor="@color/colorLightGray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:padding="1dp"
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="GOOD"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:background="@drawable/green_shape"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorPeterRiver2" />
+</LinearLayout>

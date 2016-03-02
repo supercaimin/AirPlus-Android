@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.homecaught.airplus.view.ImageCycleView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AirPlus"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPeterRiver"
+        android:text="SIGN IN"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="left|bottom"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="?android:textAppearanceSmall"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPeterRiver"
+        android:text="SIGN UP"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="right|bottom"
+        android:textStyle="bold" />
+
+</FrameLayout>
