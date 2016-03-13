@@ -77,6 +77,8 @@ public class MySelectAdapter extends BaseAdapter {
             DisplayImageOptions imageOptions = new DisplayImageOptions.Builder().cacheInMemory(true)
                     .cacheOnDisk(true).imageScaleType(ImageScaleType.IN_SAMPLE_INT).build();
             ImageLoader.getInstance().displayImage(mlogoItems.get(position), viewHolder.imageView, imageOptions);
+        }else{
+            viewHolder.imageView.setVisibility(View.GONE);
         }
         viewHolder.textView.setText(mItems.get(position));
         return convertView;

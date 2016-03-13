@@ -1,8 +1,8 @@
 package cn.homecaught.airplus.activity;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
@@ -32,7 +32,6 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +46,7 @@ import cn.homecaught.airplus.util.HttpData;
 import cn.homecaught.airplus.util.SystemUtils;
 
 import static android.Manifest.permission.READ_CONTACTS;
+import com.avos.avoscloud.*;
 
 /**
  * A login screen that offers login via email/password.
@@ -360,6 +360,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         Intent intent1 = new Intent();
                         intent1.setAction(MyApplication.REFRESH_DATA_NOTIFICATION);
                         sendBroadcast(intent1);
+
+                        AVInstallation.getCurrentInstallation().saveInBackground(new SaveCallback() {
+                            public void done(AVException e) {
+                                if (e == null) {
+                                    // 保存成功
+                                    String installationId = AVInstallation.getCurrentInstallation().getInstallationId();
+                                    // 关联  installationId 到用户表等操作……
+                                } else {
+                                    // 保存失败，输出错误信息
+                                }
+                            }
+                        });
                     }
 
                 } else {

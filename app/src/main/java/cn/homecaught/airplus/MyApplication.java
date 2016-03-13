@@ -9,7 +9,6 @@ import android.content.Context;
 import android.content.BroadcastReceiver;
 import android.content.IntentFilter;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Environment;
 import android.os.IBinder;
 
@@ -24,12 +23,13 @@ import com.nostra13.universalimageloader.utils.StorageUtils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Timer;
-import java.util.TimerTask;
 
+import cn.homecaught.airplus.activity.MainActivity;
 import cn.homecaught.airplus.bean.UserBean;
 import cn.homecaught.airplus.util.HttpData;
 import cn.homecaught.airplus.util.SharedPreferenceManager;
+
+import com.avos.avoscloud.*;
 
 /**
  * MyApplication
@@ -82,7 +82,11 @@ public class MyApplication extends Application {
         filter_dynamic.addAction(REFRESH_DATA_NOTIFICATION);
         registerReceiver(dynamicReceiver, filter_dynamic);
 
-        new Thread(new GetPMDataThread()).start();
+		new Thread(new GetPMDataThread()).start();
+
+		AVOSCloud.initialize(this, "pcjGycRPevcwWdRWbMv9VznJ-gzGzoHsz", "iQQnBfSp2q3XnN2qBnTpJeJu");
+		PushService.setDefaultPushCallback(this, MainActivity.class);
+
 
 	}
 
