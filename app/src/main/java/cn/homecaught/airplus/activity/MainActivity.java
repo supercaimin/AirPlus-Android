@@ -203,6 +203,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
         } else if (id == R.id.signOutItem) {
+            new SetInstallationIdTask("").execute();
 
             Dialog dialog = DialogTool.createConfirmDialog(this, "Confirm", "Sign out?",
                     "YES", "NO",
@@ -279,6 +280,25 @@ public class MainActivity extends AppCompatActivity
 
         mMyDevicesAdapter.reload(mDevices);
     }
+
+    public class  SetInstallationIdTask extends AsyncTask<Void, Void, String> {
+        private  final String mInstallationId;
+
+        public SetInstallationIdTask(String installationId){
+            mInstallationId = installationId;
+        }
+
+        @Override
+        protected String doInBackground(Void... params) {
+            return HttpData.setInstallationId(UserBean.getInstance().getUid(), mInstallationId);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+    }
+
     private class GetUserInstrumentsTask extends AsyncTask<Void, Void, String>{
 
         @Override

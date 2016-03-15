@@ -21,6 +21,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -318,6 +319,23 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailView.setAdapter(adapter);
     }
 
+    public class  SetInstallationIdTask extends AsyncTask<Void, Void, String> {
+        private  final String mInstallationId;
+
+        public SetInstallationIdTask(String installationId){
+            mInstallationId = installationId;
+        }
+
+        @Override
+        protected String doInBackground(Void... params) {
+            return HttpData.setInstallationId(UserBean.getInstance().getUid(), mInstallationId);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+        }
+    }
 
     /**
      * Represents an asynchronous login/registration task used to authenticate
@@ -365,8 +383,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                             public void done(AVException e) {
                                 if (e == null) {
                                     // 保存成功
-                                    String installationId = AVInstallation.getCurrentInstallation().getInstallationId();
+                                    String installationId = AVInstallation.getCurrentInstallation().getObjectId();
                                     // 关联  installationId 到用户表等操作……
+                                    Log.e("ERR", installationId);
+                                    new SetInstallationIdTask(installationId).execute();
                                 } else {
                                     // 保存失败，输出错误信息
                                 }

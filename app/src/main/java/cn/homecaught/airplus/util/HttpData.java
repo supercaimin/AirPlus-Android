@@ -276,5 +276,23 @@ public class HttpData {
 		return post(url, nvps);
 	}
 
+	/**
+	 * 删除设备
+	 *
+	 * @param userId
+	 * @param installationId
+	 * @return
+	 */
+	public static String setInstallationId(String userId, String installationId) {
+		String url = FAKE_SERVER + "set_installation_id";
+		List<NameValuePair> nvps = new ArrayList<NameValuePair>();
+		BasicNameValuePair lonParam = new BasicNameValuePair("user_id",
+				userId);
+		BasicNameValuePair latParam = new BasicNameValuePair("installation_id",
+				installationId);
+		nvps.add(lonParam);
+		nvps.add(latParam);
+		return post(url, nvps);
+	}
 
 }
