@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/classes-6ab68cd90b14f2f4ca5df03094ba8cce0678edd8.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/org.apache.http.legacy.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/org.apache.http.legacy-29350dc06e794eeed424df5bfb2bec858d00b522.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/universal-image-loader-1.9.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/universal-image-loader-1.9.4-6aa1ae951f0a998a0ff260e179b332841ff27c47.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/classes-5fe5a657ac8506a452fc6dafeee708561a4b0497.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/AirPlus-Android/hellocharts-library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f0c728e1852c44d6a8fb804eadd314da2f099c70">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/classes-ebef33486d8f5854147934589285fd13ded4a851.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/okio-1.6.0-leancloud.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7086c00a30a6de0ee3b963ec2c3702d37f1de11d">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/okio-1.6.0-leancloud-04af5fefa198a80f041fa27972f7fab5f56d235e.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/classes-febadebc38016721acd0f980a17ee52f8bd61d23.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/protobuf-java-2.6.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d9521f2aecb909835746b7a5facf612af5e890e8">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/protobuf-java-2.6.1-58b66a214c09a943e885776d642ab4439ce9350d.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/avoscloud-sdk-v3.13.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d2a250cf638bce0bdd040244e7b24597987cb2f4">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/avoscloud-sdk-v3.13.4-a5a8f66f76d9b44c835dffc9ed6715c69527b35c.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/support-annotations-23.1.0-dbfd76677b040e6767e435558724ef0b67c9b25c.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/httpmime-4.2.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dba4d4d224e2ca872af5be8d2992777583145478">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/httpmime-4.2.4-e95949a7720ef4c6d0c90fe0ef30a736f4660b38.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/Java-WebSocket-1.3.1-leancloud.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b2e07c7789af93de587a1d0c9441fb0e74fd16e0">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/Java-WebSocket-1.3.1-leancloud-185488cb97079fbc967d075d564f6dadb7070842.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/avoscloud-push-v3.13.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="697ec5c46f832855c110c5a045afd506d1019768">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/avoscloud-push-v3.13.4-bd08c8dab981aa6bfffb9564a31e2389237c3603.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/internal_impl-23.1.0-d1a52d6fd52a75169542f355ab658cef05e9dc32.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/okhttp-2.6.0-leancloud.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7d1a8dbbc128e91cf41ab6eafaa741ab2a6ff930">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/okhttp-2.6.0-leancloud-ba72733b14c147b422f67a088396feb4145f1c45.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/libs/fastjson.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="94d4ebd4acdaf01d7445435382eea2d2d38e7534">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/fastjson-5ec0f600ca165700dfcb6b87f4d1ecf94a9f8a40.jar" />
+    </item>
+    <item
+        jar="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/a1/Documents/project/AirPlus-Android/app/build/intermediates/pre-dexed/release/classes-67c98fa12eaf467a290a952fb21a8c768d7c2c0b.jar" />
+    </item>
+
+</items>

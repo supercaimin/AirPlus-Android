@@ -86,6 +86,7 @@ public class MyApplication extends Application {
 
 		AVOSCloud.initialize(this, "pcjGycRPevcwWdRWbMv9VznJ-gzGzoHsz", "iQQnBfSp2q3XnN2qBnTpJeJu");
 		PushService.setDefaultPushCallback(this, MainActivity.class);
+		PushService.setNotificationIcon(R.drawable.ic_push_icon);
 
 
 	}

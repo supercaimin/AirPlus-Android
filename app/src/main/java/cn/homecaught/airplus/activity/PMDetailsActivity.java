@@ -213,12 +213,15 @@ public class PMDetailsActivity extends AppCompatActivity {
         }
         Collections.reverse(pms);
 
-
         for (int i = 0; i < numberOfLines; ++i) {
             for (int j = 0; j < numberOfPoints; ++j) {
                 if(i == 0) randomNumbersTab[i][j] = Integer.valueOf(outPM25s[j]);
                 if(i == 1){
-                    randomNumbersTab[i][j] = Integer.valueOf(pms.get(j));
+                    if(j < pms.size()){
+                        randomNumbersTab[i][j] = Integer.valueOf(pms.get(j));
+                    }else {
+                        randomNumbersTab[i][j] = 0;
+                    }
                 }
 
             }
