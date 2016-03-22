@@ -68,6 +68,16 @@ public class DeviceBean implements Serializable{
     private String serial;
     private Boolean isPublic;
 
+    public String getCityKey() {
+        return cityKey;
+    }
+
+    public void setCityKey(String cityKey) {
+        this.cityKey = cityKey;
+    }
+
+    private String cityKey;
+
     public List<PM25Bean> getPm25Beans() {
         return pm25Beans;
     }

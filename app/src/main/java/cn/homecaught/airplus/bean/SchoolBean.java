@@ -24,6 +24,14 @@ public class SchoolBean {
     public String getLogo() {
         return logo;
     }
+    public String getIsOpen() {
+        return isOpen;
+    }
+
+    public void setIsOpen(String isOpen) {
+        this.isOpen = isOpen;
+    }
+
 
     public void setLogo(String logo) {
         this.logo = logo;
@@ -33,5 +41,8 @@ public class SchoolBean {
     private String uid;
 
     private String logo;
+
+
+    private String isOpen;
 
 }

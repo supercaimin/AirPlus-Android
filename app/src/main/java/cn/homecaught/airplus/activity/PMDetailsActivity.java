@@ -211,16 +211,23 @@ public class PMDetailsActivity extends AppCompatActivity {
                 break;
             }
         }
-        Collections.reverse(pms);
+        if (pms.size() == 24){
+            Collections.reverse(pms);
+        }
 
         for (int i = 0; i < numberOfLines; ++i) {
             for (int j = 0; j < numberOfPoints; ++j) {
                 if(i == 0) randomNumbersTab[i][j] = Integer.valueOf(outPM25s[j]);
                 if(i == 1){
-                    if(j < pms.size()){
-                        randomNumbersTab[i][j] = Integer.valueOf(pms.get(j));
+                    if (pms.size() < 24){
+                        if(j < pms.size()){
+                            randomNumbersTab[i][23 - j] = Integer.valueOf(pms.get(j));
+                        }else {
+                            randomNumbersTab[i][23 - j] = 0;
+                        }
                     }else {
-                        randomNumbersTab[i][j] = 0;
+                        randomNumbersTab[i][j] = Integer.valueOf(pms.get(j));
+
                     }
                 }
 
@@ -526,7 +533,7 @@ public class PMDetailsActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(Void... params) {
-            return HttpData.getOutdoorData();
+            return HttpData.getOutdoorData(deviceBean.getCityKey());
         }
 
         @Override

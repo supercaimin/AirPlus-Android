@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,6 +30,7 @@ import cn.homecaught.airplus.bean.CityBean;
 import cn.homecaught.airplus.bean.DeviceBean;
 import cn.homecaught.airplus.bean.PM25Bean;
 import cn.homecaught.airplus.bean.SchoolBean;
+import cn.homecaught.airplus.bean.UserBean;
 import cn.homecaught.airplus.util.HttpData;
 import cn.homecaught.airplus.util.SharedPreferenceManager;
 
@@ -101,14 +103,32 @@ public class SelectActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(action.equals("add") && type.equals("school")){
-                    Intent intent = new Intent(SelectActivity.this, SelectActivity.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("type",  "device");
-                    bundle.putString("action", action);
                     SchoolBean schoolBean = (SchoolBean) items.get(position);
-                    bundle.putString("id", schoolBean.getUid());
-                    intent.putExtras(bundle);
-                    startActivity(intent);
+
+                    if (schoolBean.getIsOpen().equals("1")) {
+                        Intent intent = new Intent(SelectActivity.this, SelectActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("type",  "device");
+                        bundle.putString("action", action);
+                        bundle.putString("id", schoolBean.getUid());
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }else {
+                        if (schoolBean.getUid().equals(UserBean.getInstance().getSchoolId())){
+                            Intent intent = new Intent(SelectActivity.this, SelectActivity.class);
+                            Bundle bundle = new Bundle();
+                            bundle.putString("type",  "device");
+                            bundle.putString("action", action);
+                            bundle.putString("id", schoolBean.getUid());
+                            intent.putExtras(bundle);
+                            startActivity(intent);
+                        }else {
+                            Snackbar.make(tvTip, "The school is not allowed to access. Please contact the admin to get the account.", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                            return;
+                        }
+                    }
+
                 }
                 if(action.equals("add") && type.equals("device")){
                     try{
@@ -145,12 +165,20 @@ public class SelectActivity extends AppCompatActivity {
                 }
 
                 if(action.equals("register") && type.equals("school")){
-                    Intent intent = new Intent(SelectActivity.this, RegisterActivity.class);
-                    Bundle bundle = new Bundle();
                     SchoolBean schoolBean = (SchoolBean) items.get(position);
-                    bundle.putString("schoolId", schoolBean.getUid());
-                    intent.putExtras(bundle);
-                    startActivity(intent);
+
+                    if (schoolBean.getIsOpen().equals("1")){
+                        Intent intent = new Intent(SelectActivity.this, RegisterActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("schoolId", schoolBean.getUid());
+                        intent.putExtras(bundle);
+                        startActivity(intent);
+                    }else {
+                        Snackbar.make(tvTip, "The school is not allowed to access. Please contact the admin to get the account.", Snackbar.LENGTH_LONG)
+                                .setAction("Action", null).show();
+                        return;
+                    }
+
                 }
                 finish();
             }
@@ -229,6 +257,7 @@ public class SelectActivity extends AppCompatActivity {
             items = new ArrayList<Object>();
             List<String> datas = new ArrayList<>();
             List<String> logoDatas = new ArrayList<>();
+            Log.i("AirPlus", s);
 
             try{
 
@@ -240,6 +269,7 @@ public class SelectActivity extends AppCompatActivity {
                     schoolBean.setName(o.getString("name"));
                     schoolBean.setUid(o.getString("id"));
                     schoolBean.setLogo(o.getString("logo"));
+                    schoolBean.setIsOpen(o.getString("is_open"));
                     items.add(schoolBean);
                     datas.add(schoolBean.getName());
                     logoDatas.add(schoolBean.getLogo());
@@ -271,7 +301,7 @@ public class SelectActivity extends AppCompatActivity {
 
             items = new ArrayList<Object>();
             List<String> datas = new ArrayList<>();
-
+            Log.i("AirPlus", s);
             try{
 
                 JSONObject jsonObject = new JSONObject(s);
@@ -283,6 +313,7 @@ public class SelectActivity extends AppCompatActivity {
                     deviceBean.setUid(o.getString("id"));
                     deviceBean.setSerial(o.getString("serial"));
                     deviceBean.setSchoolId(o.getString("school_id"));
+                    deviceBean.setCityKey(o.getString("city_key"));
                     items.add(deviceBean);
                     datas.add(deviceBean.getName());
                 }

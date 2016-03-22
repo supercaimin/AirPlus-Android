@@ -36,7 +36,7 @@ public class HttpData {
 	/** 测试url **/ 
 
 	public static final String FAKE_SERVER = "http://139.196.40.169/api/index/";
-	public static final String 	OUTDOOR_DATA = "http://www.pm25.com/city/nanjing.html";
+	public static final String 	OUTDOOR_DATA = "http://www.pm25.com/city/";
 	//	 // /** 正式的地址url **/
 	public static final String BASE_URL = "http://139.196.40.169/";
 
@@ -203,8 +203,8 @@ public class HttpData {
 	 *
 	 * @return
 	 */
-	public static String getOutdoorData() {
-		String url = OUTDOOR_DATA;
+	public static String getOutdoorData(String cityKey) {
+		String url = OUTDOOR_DATA + cityKey + ".html";
 		return get(url, null);
 
 	}

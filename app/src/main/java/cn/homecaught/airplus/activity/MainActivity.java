@@ -255,7 +255,7 @@ public class MainActivity extends AppCompatActivity
                 deviceBean.setSchoolId(jsonObject1.getString("school_id"));
                 deviceBean.setSchoolName(jsonObject1.getString("school_name"));
                 deviceBean.setSerial(jsonObject1.getString("serial"));
-//                deviceBean.setIsPublic(jsonObject1.getBoolean("is_public"));
+                deviceBean.setCityKey(jsonObject1.getString("city_key"));
 
                 List<PM25Bean> pm25BeanList = new ArrayList<PM25Bean>();
 
