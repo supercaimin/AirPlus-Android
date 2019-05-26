@@ -1,14 +1,15 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     // resourcePrefix 'mpcht'
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 23
+        minSdkVersion 25
+        targetSdkVersion 28
         versionCode 1
         versionName '1.0'
+        maxSdkVersion 25
 
         sourceSets {
             main {
@@ -39,14 +40,14 @@ repositories {
 dependencies {
     //compile fileTree(dir: 'libs', include: ['*.jar'])
     //compile 'com.android.support:support-v4:19.+'
-    provided 'io.realm:realm-android:0.87.5' // "optional" dependency to realm-database API
+    compileOnly 'io.realm:realm-android:0.87.5' // "optional" dependency to realm-database API
 }
 
 android.libraryVariants.all { variant ->
     def name = variant.buildType.name
     def task = project.tasks.create "jar${name.capitalize()}", Jar
-    task.dependsOn variant.javaCompile
-    task.from variant.javaCompile.destinationDir
+    task.dependsOn variant.javaCompileProvider
+    //task.from variant.javaCompileProvider.destinationDir
     artifacts.add('archives', task);
 }
 

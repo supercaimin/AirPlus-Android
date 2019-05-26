@@ -1,20 +1,24 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "cn.homecaught.airplus"
-        minSdkVersion 14
-        targetSdkVersion 23
+        minSdkVersion 25
+        targetSdkVersion 28
         versionCode 2
         versionName "1.0.1"
+        maxSdkVersion 25
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable = false
+            jniDebuggable = false
+            renderscriptDebuggable = false
         }
     }
     packagingOptions {
@@ -26,20 +30,20 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.android.support:design:23.1.0'
-    compile files('libs/org.apache.http.legacy.jar')
-    compile files('libs/universal-image-loader-1.9.4.jar')
-    compile project(':hellocharts-library')
-    compile files('libs/avoscloud-push-v3.13.4.jar')
-    compile files('libs/avoscloud-sdk-v3.13.4.jar')
-    compile files('libs/fastjson.jar')
-    compile files('libs/httpmime-4.2.4.jar')
-    compile files('libs/Java-WebSocket-1.3.1-leancloud.jar')
-    compile files('libs/okhttp-2.6.0-leancloud.jar')
-    compile files('libs/okio-1.6.0-leancloud.jar')
-    compile files('libs/protobuf-java-2.6.1.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13-beta-3'
+    implementation 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    implementation 'com.android.support:design:26.0.0-alpha1'
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/universal-image-loader-1.9.4.jar')
+    implementation project(':hellocharts-library')
+    implementation files('libs/avoscloud-push-v3.13.4.jar')
+    implementation files('libs/avoscloud-sdk-v3.13.4.jar')
+    implementation files('libs/fastjson.jar')
+    implementation files('libs/httpmime-4.2.4.jar')
+    implementation files('libs/Java-WebSocket-1.3.1-leancloud.jar')
+    implementation files('libs/okhttp-2.6.0-leancloud.jar')
+    implementation files('libs/okio-1.6.0-leancloud.jar')
+    implementation files('libs/protobuf-java-2.6.1.jar')
 }
 
